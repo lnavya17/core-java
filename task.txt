@@ -1,7 +1,0 @@
-4 examples:
-
-ECommerce
-RailwayStation
-PostOffice
-Gym
-Theatres
