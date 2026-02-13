@@ -1,50 +1,17 @@
 class Printer{
-	static boolean isTurned;
-	static int currentSpeed;
-	static int maxSpeed=6;
-	static int minSpeed;
-	
-	static boolean onOrOff(){
-		
-		if(isTurned==false){
-		
-			isTurned=true;
-			System.out.println("The Printer is turned on...");
-		
-		}else if(isTurned==true){
-		
-			isTurned=false;
-			System.out.println("The Printer is turned off...");
-		
-		}
-		
-		return isTurned;
-	}
-	static void increaseSpeed(){
-		System.out.println("Increase Speed method is invoked");
-		if(isTurned==true){
-			if(currentSpeed<maxSpeed){
-				currentSpeed+=1;
-				System.out.println("The current Speed is "+currentSpeed);
-			}else{
-				System.out.println("The current speed reached its maximum speed.");
-			}
-		}else{
-			System.out.println("Please first turn on the Printer.");
-		}
-	}
-	
-	static void decreaseSpeed(){
-		System.out.println("decrease speed method is invoked");
-		if(isTurned==true){
-			if(currentSpeed>minSpeed){
-				currentSpeed-=1;
-				System.out.println("The current speed is "+currentSpeed);
-			}else{
-				System.out.println("The current Speed reached its minimum speed.");
-			}
-		}else{
-			System.out.println("Please first turn on the Printer.");
-		}
-	}
+    public static String getBrand(){ return "HP"; }
+    public static double getPrice(){ return 12000; }
+    public static String getType(){ return "Inkjet"; }
+    public static boolean getWifi(){ return true; }
+    public static boolean getColorPrint(){ return true; }
+    public static int getPrintSpeed(){ return 20; }
+    public static boolean getScan(){ return true; }
+    public static boolean getCopy(){ return true; }
+    public static int getWarranty(){ return 1; }
+    public static String getColor(){ return "White"; }
+    public static boolean getMobilePrint(){ return true; }
+    public static boolean getDuplexPrint(){ return true; }
+    public static double getWeight(){ return 5.5; }
+    public static boolean getCloudPrint(){ return true; }
+    public static boolean getUsbSupport(){ return true; }
 }

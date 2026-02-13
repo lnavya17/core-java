@@ -1,50 +1,17 @@
 class ElectricKettle{
-	static boolean isTurned;
-	static int currentSpeed;
-	static int maxSpeed=8;
-	static int minSpeed;
-	
-	static boolean onOrOff(){
-		
-		if(isTurned==false){
-		
-			isTurned=true;
-			System.out.println("The ElectricKettle is turned on...");
-		
-		}else if(isTurned==true){
-		
-			isTurned=false;
-			System.out.println("The ElectricKettle is turned off...");
-		
-		}
-		
-		return isTurned;
-	}
-	static void increaseSpeed(){
-		System.out.println("Increase Speed method is invoked");
-		if(isTurned==true){
-			if(currentSpeed<maxSpeed){
-				currentSpeed+=1;
-				System.out.println("The current Speed is "+currentSpeed);
-			}else{
-				System.out.println("The current speed reached its maximum speed.");
-			}
-		}else{
-			System.out.println("Please first turn on the ElectricKettle.");
-		}
-	}
-	
-	static void decreaseSpeed(){
-		System.out.println("decrease speed method is invoked");
-		if(isTurned==true){
-			if(currentSpeed>minSpeed){
-				currentSpeed-=1;
-				System.out.println("The current speed is "+currentSpeed);
-			}else{
-				System.out.println("The current Speed reached its minimum speed.");
-			}
-		}else{
-			System.out.println("Please first turn on the ElectricKettle.");
-		}
-	}
+    public static String getBrand(){ return "Havells"; }
+    public static double getPrice(){ return 2200; }
+    public static int getCapacity(){ return 2; }
+    public static boolean getAutoCut(){ return true; }
+    public static boolean getBoilDryProtection(){ return true; }
+    public static int getWarranty(){ return 2; }
+    public static String getColor(){ return "Silver"; }
+    public static boolean getLedIndicator(){ return true; }
+    public static boolean getCordless(){ return true; }
+    public static double getWeight(){ return 1.2; }
+    public static boolean getFastBoil(){ return true; }
+    public static boolean getTemperatureControl(){ return false; }
+    public static boolean getLockingLid(){ return true; }
+    public static boolean getWaterLevelIndicator(){ return true; }
+    public static boolean getEnergyEfficient(){ return true; }
 }

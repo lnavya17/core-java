@@ -1,50 +1,17 @@
 class Router{
-	static boolean isenabled;
-	static int currentSpeed;
-	static int maxSpeed=8;
-	static int minSpeed;
-	
-	static boolean onOrOff(){
-		
-		if(isenabled==false){
-		
-			isenabled=true;
-			System.out.println("The Router is turned on...");
-		
-		}else if(isenabled==true){
-		
-			isenabled=false;
-			System.out.println("The Router is turned off...");
-		
-		}
-		
-		return isenabled;
-	}
-	static void increaseSpeed(){
-		System.out.println("Increase Speed method is invoked");
-		if(isenabled==true){
-			if(currentSpeed<maxSpeed){
-				currentSpeed+=1;
-				System.out.println("The current Speed is "+currentSpeed);
-			}else{
-				System.out.println("The current speed reached its maximum speed.");
-			}
-		}else{
-			System.out.println("Please first turn on the Router.");
-		}
-	}
-	
-	static void decreaseSpeed(){
-		System.out.println("decrease speed method is invoked");
-		if(isenabled==true){
-			if(currentSpeed>minSpeed){
-				currentSpeed-=1;
-				System.out.println("The current speed is "+currentSpeed);
-			}else{
-				System.out.println("The current Speed reached its minimum speed.");
-			}
-		}else{
-			System.out.println("Please first turn on the Router.");
-		}
-	}
+    public static String getBrand(){ return "TP-Link"; }
+    public static double getPrice(){ return 2999; }
+    public static String getWifiStandard(){ return "WiFi 6"; }
+    public static int getAntennas(){ return 4; }
+    public static boolean getDualBand(){ return true; }
+    public static int getLanPorts(){ return 4; }
+    public static boolean getParentalControl(){ return true; }
+    public static boolean getGuestNetwork(){ return true; }
+    public static int getWarranty(){ return 3; }
+    public static String getColor(){ return "Black"; }
+    public static boolean getAppControl(){ return true; }
+    public static double getWeight(){ return 0.5; }
+    public static boolean getBeamforming(){ return true; }
+    public static boolean getFirewall(){ return true; }
+    public static boolean getMeshSupport(){ return true; }
 }

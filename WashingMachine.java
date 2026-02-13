@@ -1,51 +1,17 @@
 class WashingMachine{
-	static boolean isTurned;
-	static int currentSpeed;
-	static int maxSpeed=8;
-	static int minSpeed;
-	
-	static boolean onOrOff(){
-		
-		if(isTurned==false){
-		
-			isTurned=true;
-			System.out.println("The WashingMachine is turned on...");
-		
-		}else if(isTurned==true){
-		
-			isTurned=false;
-			System.out.println("The WashingMachine is turned off...");
-		
-		}
-		
-		return isTurned;
-		
-	}
-	static void increaseSpeed(){
-		System.out.println("Increase Speed method is invoked");
-		if(isTurned==true){
-			if(currentSpeed<maxSpeed){
-				currentSpeed+=1;
-				System.out.println("The current Speed is "+currentSpeed);
-			}else{
-				System.out.println("The current speed reached its maximum speed.");
-			}
-		}else{
-			System.out.println("Please first turn on the WashingMachine.");
-		}
-	}
-	
-	static void decreaseSpeed(){
-		System.out.println("decrease speed method is invoked");
-		if(isTurned==true){
-			if(currentSpeed>minSpeed){
-				currentSpeed-=1;
-				System.out.println("The current speed is "+currentSpeed);
-			}else{
-				System.out.println("The current Speed reached its minimum speed.");
-			}
-		}else{
-			System.out.println("Please first turn on the WashingMachine.");
-		}
-	}
+    public static String getBrand(){ return "Whirlpool"; }
+    public static double getPrice(){ return 32000; }
+    public static int getCapacity(){ return 8; }
+    public static String getType(){ return "Front Load"; }
+    public static int getSpinSpeed(){ return 1200; }
+    public static boolean getInverterMotor(){ return true; }
+    public static int getEnergyRating(){ return 5; }
+    public static boolean getChildLock(){ return true; }
+    public static int getWarranty(){ return 2; }
+    public static String getColor(){ return "Grey"; }
+    public static boolean getQuickWash(){ return true; }
+    public static boolean getSteamWash(){ return true; }
+    public static boolean getDigitalDisplay(){ return true; }
+    public static double getWeight(){ return 60; }
+    public static boolean getWifi(){ return false; }
 }

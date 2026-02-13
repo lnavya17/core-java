@@ -1,50 +1,17 @@
 class Projector{
-	static boolean isenabled;
-	static int currentSpeed;
-	static int maxSpeed=8;
-	static int minSpeed;
-	
-	static boolean onOrOff(){
-		
-		if(isenabled==false){
-		
-			isenabled=true;
-			System.out.println("The Projector is turned on...");
-		
-		}else if(isenabled==true){
-		
-			isenabled=false;
-			System.out.println("The Projector is turned off...");
-		
-		}
-		
-		return isenabled;
-	}
-	static void increaseSpeed(){
-		System.out.println("Increase Speed method is invoked");
-		if(isenabled==true){
-			if(currentSpeed<maxSpeed){
-				currentSpeed+=1;
-				System.out.println("The current Speed is "+currentSpeed);
-			}else{
-				System.out.println("The current speed reached its maximum speed.");
-			}
-		}else{
-			System.out.println("Please first turn on the Projector.");
-		}
-	}
-	
-	static void decreaseSpeed(){
-		System.out.println("decrease speed method is invoked");
-		if(isenabled==true){
-			if(currentSpeed>minSpeed){
-				currentSpeed-=1;
-				System.out.println("The current speed is "+currentSpeed);
-			}else{
-				System.out.println("The current Speed reached its minimum speed.");
-			}
-		}else{
-			System.out.println("Please first turn on the Projector.");
-		}
-	}
+    public static String getBrand(){ return "Epson"; }
+    public static double getPrice(){ return 45000; }
+    public static String getResolution(){ return "Full HD"; }
+    public static int getBrightness(){ return 3000; }
+    public static boolean getWifi(){ return true; }
+    public static boolean getBluetooth(){ return true; }
+    public static int getWarranty(){ return 2; }
+    public static String getColor(){ return "White"; }
+    public static boolean getHdmi(){ return true; }
+    public static boolean getUsb(){ return true; }
+    public static double getWeight(){ return 2.8; }
+    public static boolean get3DSupport(){ return true; }
+    public static boolean getKeystoneCorrection(){ return true; }
+    public static int getLampLife(){ return 6000; }
+    public static boolean getBuiltInSpeaker(){ return true; }
 }

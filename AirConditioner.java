@@ -1,50 +1,17 @@
 class AirConditioner{
-	static boolean isTurned;
-	static int currentSpeed;
-	static int maxSpeed=8;
-	static int minSpeed;
-	
-	static boolean onOrOff(){
-		
-		if(isTurned==false){
-		
-			isTurned=true;
-			System.out.println("The AirConditioner is turned on...");
-		
-		}else if(isTurned==true){
-		
-			isTurned=false;
-			System.out.println("The AirConditioner is turned off...");
-		
-		}
-		
-		return isTurned;
-	}
-	static void increaseSpeed(){
-		System.out.println("Increase Speed method is invoked");
-		if(isTurned==true){
-			if(currentSpeed<maxSpeed){
-				currentSpeed+=1;
-				System.out.println("The current Speed is "+currentSpeed);
-			}else{
-				System.out.println("The current speed reached its maximum speed.");
-			}
-		}else{
-			System.out.println("Please first turn on the AirConditioner.");
-		}
-	}
-	
-	static void decreaseSpeed(){
-		System.out.println("decrease speed method is invoked");
-		if(isTurned==true){
-			if(currentSpeed>minSpeed){
-				currentSpeed-=1;
-				System.out.println("The current speed is "+currentSpeed);
-			}else{
-				System.out.println("The current Speed reached its minimum speed.");
-			}
-		}else{
-			System.out.println("Please first turn on the AirConditioner.");
-		}
-	}
+    public static String getBrand(){ return "Daikin"; }
+    public static double getPrice(){ return 42000; }
+    public static double getTon(){ return 1.5; }
+    public static int getEnergyRating(){ return 5; }
+    public static boolean getInverter(){ return true; }
+    public static boolean getWifi(){ return true; }
+    public static boolean getTurboMode(){ return true; }
+    public static boolean getSleepMode(){ return true; }
+    public static int getWarranty(){ return 5; }
+    public static String getColor(){ return "White"; }
+    public static boolean getAutoClean(){ return true; }
+    public static boolean getDehumidifier(){ return true; }
+    public static double getWeight(){ return 35; }
+    public static boolean getRemote(){ return true; }
+    public static boolean getCopperCoil(){ return true; }
 }
